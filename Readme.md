@@ -7,8 +7,8 @@ This program will convert the backup files from [Call Logs Backup & Restore](htt
 ```xml
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?><?xml-stylesheet type="text/xsl" href="calls.xsl"?>
 <calls count="8">
-  <call number="+4388812345678" duration="0" date="1303378237194" type="3" readable_date="2011/21/04 11:30:37" contact_name="Peter Foobar" />
-  <call number="+4388812345678" duration="55" date="1303378253988" type="2" readable_date="2011/21/04 11:30:53" contact_name="Peter Foobar" />
+  <call number="+436651234567" duration="0" date="1303378237194" type="3" readable_date="2011/21/04 11:30:37" contact_name="Max Muster" />
+  <call number="+436651234567" duration="103" date="1413613750000" type="2" readable_date="2014-10-18 08:29:10" contact_name="Max Muster" />
 </xml>
 ```
 
@@ -25,8 +25,12 @@ This program will convert the backup files from [Call Logs Backup & Restore](htt
 
 This call will read all entries from calls.xml and write only those which are newer than the entries from the last import.
 
-: phonecallOrg --inputfile=/mnt/phone/calls.xml --outputfile=/home/odi/Phone.org
+```
+phonecallOrg --inputfile=/mnt/phone/calls.xml --outputfile=/home/odi/Phone.org
+```
 
 If you would like to import all entries even if there are entries from the last one.
 
-: phonecallOrg -c --inputfile=/mnt/phone/calls.xml --outputfile=/home/odi/Phone.org
+```
+phonecallOrg -c --inputfile=/mnt/phone/calls.xml --outputfile=/home/odi/Phone.org
+```
